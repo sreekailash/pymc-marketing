@@ -959,6 +959,11 @@ class ModelBuilder(ABC):
     posterior = create_idata_accessor(
         "posterior", "The model hasn't been fit yet, call .fit() first"
     )
+
+    fit_result = create_idata_accessor(
+        "posterior", "The model hasn't been fit yet, call .fit() first"
+    )
+
     posterior_predictive = create_idata_accessor(
         "posterior_predictive",
         "The model hasn't been fit yet, call .sample_posterior_predictive() first",
